@@ -12,169 +12,246 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         body {
-            background-color: #0b0f19;
+            background-color: #0d061a;
             color: #ffffff;
             display: flex;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            padding: 20px;
+            padding: 15px;
         }
         .container {
             width: 100%;
-            max-width: 450px;
-            background: #111827;
-            border: 2px solid #3b82f6;
-            border-radius: 16px;
-            padding: 25px;
+            max-width: 420px;
+            background: linear-gradient(180deg, #180b2c 0%, #0d061a 100%);
+            border: 1px solid #4a1e7a;
+            border-radius: 20px;
+            padding: 20px;
             text-align: center;
-            box-shadow: 0 10px 25px rgba(59, 130, 246, 0.2);
+            box-shadow: 0 10px 30px rgba(100, 20, 180, 0.3);
         }
-        .logo {
-            width: 70px;
-            height: 70px;
-            background: #1f2937;
-            border-radius: 50%;
+        .badge-container {
             display: flex;
             justify-content: center;
-            align-items: center;
-            margin: 0 auto 15px auto;
-            border: 1px solid #3b82f6;
-            font-size: 32px;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        .badge {
+            background: rgba(30, 200, 100, 0.15);
+            border: 1px solid #22c55e;
+            color: #4ade80;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 11px;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+        }
+        .badge-gold {
+            background: rgba(234, 179, 8, 0.15);
+            border: 1px solid #eab308;
+            color: #facc15;
+        }
+        .logo-box {
+            background: linear-gradient(135deg, #2c1250, #130722);
+            border: 1px solid #7c3aed;
+            border-radius: 15px;
+            padding: 15px;
+            margin-bottom: 15px;
+            box-shadow: inset 0 0 15px rgba(124, 58, 237, 0.4);
+        }
+        .logo-box h2 {
+            font-size: 22px;
+            color: #ffffff;
+            letter-spacing: 1px;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
         }
         h1 {
-            font-size: 24px;
-            margin-bottom: 10px;
-            letter-spacing: 1px;
+            font-size: 22px;
+            margin-bottom: 5px;
             color: #ffffff;
+            letter-spacing: 0.5px;
         }
         .subtitle {
-            font-size: 13px;
-            color: #9ca3af;
+            font-size: 12px;
+            color: #b4bac6;
             margin-bottom: 20px;
-            line-height: 1.5;
+            line-height: 1.4;
         }
-        .timer-box {
-            background: #1f2937;
-            border: 1px dashed #3b82f6;
-            border-radius: 10px;
-            padding: 12px;
-            margin-bottom: 20px;
-        }
-        .timer-text {
-            font-size: 13px;
-            color: #d1d5db;
-            margin-bottom: 5px;
-        }
-        #countdown {
-            font-size: 22px;
-            font-weight: bold;
-            color: #38bdf8;
+        .subtitle span {
+            color: #facc15;
         }
         .btn {
             display: block;
             width: 100%;
-            background: linear-gradient(135deg, #2563eb, #1d4ed8);
-            color: white;
-            padding: 14px;
-            font-size: 15px;
-            font-weight: bold;
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+            color: #000000;
+            padding: 15px;
+            font-size: 16px;
+            font-weight: 800;
             text-decoration: none;
-            border-radius: 8px;
-            margin-bottom: 25px;
+            border-radius: 30px;
+            margin-bottom: 10px;
+            box-shadow: 0 5px 20px rgba(245, 158, 11, 0.4);
             transition: 0.3s;
-            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.4);
         }
         .btn:hover {
-            background: linear-gradient(135deg, #1d4ed8, #1e40af);
+            opacity: 0.9;
         }
-        .table-container {
-            border: 1px solid #374151;
-            border-radius: 8px;
-            overflow: hidden;
-            background: #161e2e;
-        }
-        .table-title {
-            background: #1f2937;
-            padding: 8px;
+        .redirect-text {
             font-size: 12px;
-            font-weight: bold;
-            color: #38bdf8;
+            color: #9ca3af;
+            margin-bottom: 20px;
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 8px;
+            margin-bottom: 20px;
+        }
+        .stat-card {
+            background: rgba(30, 15, 55, 0.8);
+            border: 1px solid #4a1e7a;
+            border-radius: 12px;
+            padding: 10px 5px;
+            text-align: center;
+        }
+        .stat-label {
+            font-size: 9px;
+            color: #9ca3af;
+            text-transform: uppercase;
+            margin-bottom: 4px;
             letter-spacing: 0.5px;
         }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            font-size: 12px;
+        .stat-value {
+            font-size: 14px;
+            font-weight: bold;
+            color: #4ade80;
+        }
+        .features-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .feature-item {
+            background: rgba(25, 12, 45, 0.9);
+            border: 1px solid #3b1768;
+            border-radius: 12px;
+            padding: 12px 15px;
+            display: flex;
+            align-items: center;
             text-align: left;
+            gap: 12px;
         }
-        th, td {
-            padding: 10px;
-            border-bottom: 1px solid #2d3748;
+        .feature-icon {
+            font-size: 22px;
+            min-width: 30px;
+            text-align: center;
         }
-        th {
+        .feature-content h3 {
+            font-size: 13px;
+            color: #facc15;
+            margin-bottom: 2px;
+        }
+        .feature-content p {
+            font-size: 11px;
             color: #9ca3af;
-            font-weight: 600;
+            line-height: 1.3;
         }
-        tr:last-child td {
-            border-bottom: none;
+        .footer-note {
+            font-size: 10px;
+            color: #6b7280;
+            margin-top: 10px;
         }
-        .text-green { color: #4ade80; }
-        .text-yellow { color: #facc15; }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <div class="logo">🐺</div>
+        <!-- Top Badges -->
+        <div class="badge-container">
+            <div class="badge">✔ VERIFIED CHANNEL</div>
+            <div class="badge badge-gold">👑 FREE TO JOIN</div>
+        </div>
+
+        <!-- Logo Box -->
+        <div class="logo-box">
+            <h2>TEAM WOLF</h2>
+        </div>
+
+        <!-- Main Headings -->
         <h1>TEAM WOLF</h1>
-        <p class="subtitle">Elite Mentorship & Big Daddy / KWG Expert Support System. Get Free Meta Ads Setup & Daily Growth Strategy.</p>
+        <p class="subtitle">Big Daddy & KWG Expert Support<br>By <span>TEAM WOLF</span></p>
 
-        <div class="timer-box">
-            <div class="timer-text">Redirecting to Official Telegram Channel in</div>
-            <div id="countdown">10</div>
+        <!-- Main CTA Button -->
+        <a href="https://t.me/YOUR_TELEGRAM_LINK" class="btn" id="tgBtn">JOIN TELEGRAM FREE</a>
+        <div class="redirect-text" id="timerText">Redirecting to Telegram in 3 seconds...</div>
+
+        <!-- Stats Grid -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-label">MEMBERS</div>
+                <div class="stat-value">5,480+</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label" style="color:#ffffff;">SUPPORT</div>
+                <div class="stat-value" style="color:#ffffff;">DAILY</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label" style="color:#38bdf8;">JOIN</div>
+                <div class="stat-value" style="color:#38bdf8;">FREE</div>
+            </div>
         </div>
 
-        <!-- Apna Telegram link yahan daal dena href me -->
-        <a href="https://t.me/YOUR_TELEGRAM_LINK" class="btn" id="tgBtn">JOIN TELEGRAM NOW</a>
-
-        <div class="table-container">
-            <div class="table-title">📊 TEAM WOLF EARNING SYSTEM</div>
-            <table>
-                <tr>
-                    <th>LEVEL</th>
-                    <th>WORK</th>
-                    <th>PROFIT</th>
-                </tr>
-                <tr>
-                    <td>Beginner</td>
-                    <td>Basic Setup</td>
-                    <td class="text-green">Daily Growth</td>
-                </tr>
-                <tr>
-                    <td>Active</td>
-                    <td>Team Build</td>
-                    <td class="text-green">High Comm.</td>
-                </tr>
-                <tr>
-                    <td>Leader</td>
-                    <td>Scaling</td>
-                    <td class="text-yellow">Max Earning</td>
-                </tr>
-            </table>
+        <!-- Features List -->
+        <div class="features-list">
+            <div class="feature-item">
+                <div class="feature-icon">💰</div>
+                <div class="feature-content">
+                    <h3>Daily Salary</h3>
+                    <p>Daily salary related updates and support.</p>
+                </div>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">📢</div>
+                <div class="feature-content">
+                    <h3>Ads Fund Support</h3>
+                    <p>Ads campaign ke liye guidance aur support.</p>
+                </div>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">🚀</div>
+                <div class="feature-content">
+                    <h3>Free Ads Setup</h3>
+                    <p>Ads setup process mein free assistance.</p>
+                </div>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">🔒</div>
+                <div class="feature-content">
+                    <h3>100% Free Joining</h3>
+                    <p>Telegram community mein free join karein.</p>
+                </div>
+            </div>
         </div>
+
+        <!-- Bottom CTA -->
+        <a href="https://t.me/YOUR_TELEGRAM_LINK" class="btn">JOIN TELEGRAM FREE</a>
+        
+        <div class="footer-note">Please verify all offers, terms and conditions before participating.</div>
     </div>
 
     <script>
-        // Auto Redirect Timer Script
-        let timeLeft = 10;
-        const countdownEl = document.getElementById('countdown');
-        const telegramURL = "https://t.me/YOUR_TELEGRAM_LINK"; // Yahan bhi apna link daal dena
+        // Auto Redirect Timer Script (3 Seconds)
+        let timeLeft = 3;
+        const timerText = document.getElementById('timerText');
+        const telegramURL = "https://t.me/YOUR_TELEGRAM_LINK"; // Apna Telegram link yahan daal dena
 
         const timer = setInterval(() => {
             timeLeft--;
-            countdownEl.textContent = timeLeft;
-            if (timeLeft <= 0) {
+            if (timeLeft > 0) {
+                timerText.textContent = `Redirecting to Telegram in ${timeLeft} seconds...`;
+            } else {
                 clearInterval(timer);
                 window.location.href = telegramURL;
             }
