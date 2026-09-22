@@ -3,26 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TEAM WOLF - Elite Mentorship & Support</title>
-    
-    <!-- Meta Pixel Code -->
-    <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)n._fbq=n;n.push(typeof(n.is-new),!0);n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '900090632968333');
-    fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=900090632968333&ev=PageView&noscript=1"
-    /></noscript>
-    <!-- End Meta Pixel Code -->
-
+    <title>Team Wolf - Expert Support</title>
     <style>
         * {
             margin: 0;
@@ -45,41 +26,47 @@
             background: #111827;
             border: 2px solid #3b82f6;
             border-radius: 16px;
-            padding: 30px 20px;
+            padding: 25px;
             text-align: center;
-            box-shadow: 0 10px 30px rgba(59, 130, 246, 0.3);
+            box-shadow: 0 10px 25px rgba(59, 130, 246, 0.2);
         }
-        .logo-area {
-            font-size: 40px;
-            margin-bottom: 15px;
+        .logo {
+            width: 70px;
+            height: 70px;
+            background: #1f2937;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 15px auto;
+            border: 1px solid #3b82f6;
+            font-size: 32px;
         }
         h1 {
             font-size: 24px;
-            color: #f8fafc;
             margin-bottom: 10px;
-            text-transform: uppercase;
-            font-weight: 900;
             letter-spacing: 1px;
+            color: #ffffff;
         }
         .subtitle {
-            font-size: 14px;
-            color: #94a3b8;
-            margin-bottom: 25px;
+            font-size: 13px;
+            color: #9ca3af;
+            margin-bottom: 20px;
             line-height: 1.5;
         }
-        .redirect-box {
-            background: #1e293b;
-            border: 1px dashed #60a5fa;
-            padding: 15px;
+        .timer-box {
+            background: #1f2937;
+            border: 1px dashed #3b82f6;
             border-radius: 10px;
-            margin-bottom: 25px;
+            padding: 12px;
+            margin-bottom: 20px;
         }
-        .redirect-box p {
-            font-size: 14px;
-            color: #cbd5e1;
-            margin-bottom: 10px;
+        .timer-text {
+            font-size: 13px;
+            color: #d1d5db;
+            margin-bottom: 5px;
         }
-        .countdown {
+        #countdown {
             font-size: 22px;
             font-weight: bold;
             color: #38bdf8;
@@ -89,108 +76,109 @@
             width: 100%;
             background: linear-gradient(135deg, #2563eb, #1d4ed8);
             color: white;
-            padding: 15px;
-            font-size: 16px;
+            padding: 14px;
+            font-size: 15px;
             font-weight: bold;
             text-decoration: none;
-            border-radius: 10px;
-            text-transform: uppercase;
-            box-shadow: 0 4px 15px rgba(37, 99, 235, 0.4);
-            transition: 0.3s ease;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            transition: 0.3s;
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.4);
         }
         .btn:hover {
             background: linear-gradient(135deg, #1d4ed8, #1e40af);
-            transform: translateY(-2px);
         }
         .table-container {
-            margin-top: 25px;
-            background: #1e293b;
-            border-radius: 10px;
-            padding: 15px;
-            border: 1px solid #f59e0b;
+            border: 1px solid #374151;
+            border-radius: 8px;
+            overflow: hidden;
+            background: #161e2e;
         }
-        .profit-table {
+        .table-title {
+            background: #1f2937;
+            padding: 8px;
+            font-size: 12px;
+            font-weight: bold;
+            color: #38bdf8;
+            letter-spacing: 0.5px;
+        }
+        table {
             width: 100%;
             border-collapse: collapse;
             font-size: 12px;
             text-align: left;
         }
-        .profit-table th, .profit-table td {
-            padding: 8px;
-            border-bottom: 1px solid #334155;
+        th, td {
+            padding: 10px;
+            border-bottom: 1px solid #2d3748;
         }
-        .profit-table th {
-            color: #facc15;
+        th {
+            color: #9ca3af;
+            font-weight: 600;
         }
+        tr:last-child td {
+            border-bottom: none;
+        }
+        .text-green { color: #4ade80; }
+        .text-yellow { color: #facc15; }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <div class="logo-area">🐺</div>
+        <div class="logo">🐺</div>
         <h1>TEAM WOLF</h1>
         <p class="subtitle">Elite Mentorship & Big Daddy / KWG Expert Support System. Get Free Meta Ads Setup & Daily Growth Strategy.</p>
 
-        <div class="redirect-box">
-            <p>Redirecting to Official Telegram Channel in</p>
-            <div class="countdown" id="timer">15</div>
+        <div class="timer-box">
+            <div class="timer-text">Redirecting to Official Telegram Channel in</div>
+            <div id="countdown">10</div>
         </div>
 
-        <!-- Telegram Link Button -->
-        <a href="https://t.me/Mr_Perfect_R7" class="btn" id="joinBtn">Join Telegram Now</a>
+        <!-- Apna Telegram link yahan daal dena href me -->
+        <a href="https://t.me/YOUR_TELEGRAM_LINK" class="btn" id="tgBtn">JOIN TELEGRAM NOW</a>
 
-        <!-- Profit Table -->
         <div class="table-container">
-            <h4 style="color: #facc15; font-size: 13px; margin-bottom: 10px; text-transform: uppercase;">📊 Team Wolf Earning System</h4>
-            <table class="profit-table">
-                <thead>
-                    <tr>
-                        <th>LEVEL</th>
-                        <th>WORK</th>
-                        <th>PROFIT</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>Beginner</strong></td>
-                        <td>Basic Setup</td>
-                        <td><strong style="color: #4ade80;">Daily Growth</strong></td>
-                    </tr>
-                    <tr>
-                        <td><strong>Active</strong></td>
-                        <td>Team Build</td>
-                        <td><strong style="color: #4ade80;">High Comm.</strong></td>
-                    </tr>
-                    <tr>
-                        <td><strong>Leader</strong></td>
-                        <td>Scaling</td>
-                        <td><strong style="color: #facc15;">Max Earning</strong></td>
-                    </tr>
-                </tbody>
+            <div class="table-title">📊 TEAM WOLF EARNING SYSTEM</div>
+            <table>
+                <tr>
+                    <th>LEVEL</th>
+                    <th>WORK</th>
+                    <th>PROFIT</th>
+                </tr>
+                <tr>
+                    <td>Beginner</td>
+                    <td>Basic Setup</td>
+                    <td class="text-green">Daily Growth</td>
+                </tr>
+                <tr>
+                    <td>Active</td>
+                    <td>Team Build</td>
+                    <td class="text-green">High Comm.</td>
+                </tr>
+                <tr>
+                    <td>Leader</td>
+                    <td>Scaling</td>
+                    <td class="text-yellow">Max Earning</td>
+                </tr>
             </table>
         </div>
     </div>
 
     <script>
-        // Telegram Link yahan bhi update kar sakta hai agar change karna ho
-        var telegramLink = "https://t.me/Mr_Perfect_R7";
-        var timeLeft = 15;
+        // Auto Redirect Timer Script
+        let timeLeft = 10;
+        const countdownEl = document.getElementById('countdown');
+        const telegramURL = "https://t.me/YOUR_TELEGRAM_LINK"; // Yahan bhi apna link daal dena
 
-        var downloadTimer = setInterval(function(){
-            if(timeLeft <= 0){
-                clearInterval(downloadTimer);
-                window.location.href = telegramLink;
-            } else {
-                document.getElementById("timer").innerHTML = timeLeft;
+        const timer = setInterval(() => {
+            timeLeft--;
+            countdownEl.textContent = timeLeft;
+            if (timeLeft <= 0) {
+                clearInterval(timer);
+                window.location.href = telegramURL;
             }
-            timeLeft -= 1;
         }, 1000);
-
-        document.getElementById("joinBtn").addEventListener("click", function() {
-            if(typeof fbq === 'function') {
-                fbq('track', 'Lead');
-            }
-        });
     </script>
 
 </body>
